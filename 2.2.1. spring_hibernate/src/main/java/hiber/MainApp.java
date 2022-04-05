@@ -19,12 +19,12 @@ public class MainApp {
       User user1 = new User("user1", "name1", "mail1", new Car("Car1", 1));
       User user2 = new User("user2", "name2", "mail2", new Car("Car2", 2));
 
-      userService.add(user1);
-      userService.add(user2);
+      userService.addUser(user1);
+      userService.addUser(user2);
 
 
 
-      List<User> users = userService.listUsers();
+      List<User> users = userService.getUsersList();
       for (User user : users) {
          System.out.println("Id = "+user.getId());
          System.out.println("First Name = "+user.getFirstName());
